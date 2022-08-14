@@ -74,3 +74,19 @@
         }
     }
 }
+
+@media (max-width: 360px) {
+    .header {
+        &__logo {
+            width: 140px;
+        }
+        &__phone {
+            font-size: 11px;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 25px;
+        }
+    }
+}
