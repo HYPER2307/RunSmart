@@ -30,6 +30,19 @@
             display: none;
         }
     }
+    .consultation {
+        .title {
+            text-align: center;
+            font-size: 23px;
+        }
+        &__descr {
+            text-align: center;
+            font-size: 17px;
+        }
+        .feed-form {
+            margin: 36px auto 0 auto;
+        }
+    }
 }
 
 @media (max-width: 570px) {
@@ -48,6 +61,21 @@
     }
     .benefits {
         &__item {
+            width: 250px;
+        }
+    }
+    .consultation {
+        .title {
+            text-align: center;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        &__descr {
+            text-align: center;
+            font-size: 15px;
+        }
+        .feed-form {
+            margin: 36px auto 0 auto;
             width: 250px;
         }
     }
@@ -73,6 +101,19 @@
             font-size: 13px;
         }
     }
+    .consultation {
+        padding-top: 40px;
+        min-height: 400px;
+        .title {
+            text-align: center;
+            font-size: 16px;
+            line-height: 30px;
+        }
+        &__descr {
+            text-align: center;
+            font-size: 15px;
+        }
+    }
 }
 
 @media (max-width: 360px) {
@@ -87,6 +128,24 @@
     .promo {
         &__header {
             font-size: 25px;
+        }
+    }
+    .consultation {
+        padding-top: 40px;
+        min-height: 400px;
+        .title {
+            text-align: center;
+            font-size: 12px;
+            line-height: 30px;
+        }
+        &__descr {
+            text-align: center;
+            font-size: 12px;
+        }
+        .feed-form {
+            input {
+                height: 50px;
+            }
         }
     }
 }
