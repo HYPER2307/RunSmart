@@ -52,4 +52,28 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         });
       });
+
+      function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+            },
+            messages: {
+                name: "Будьласка, введіть своє ім'я",
+                phone: "Будьласка введіть свій номер телефону",
+                email: {
+                required: "Будьласка, введіть свою пошту",
+                email: "Направильно введений адрес електронної пошти, наприклад: name@domain.com"
+                }
+            }
+        });
+      };
+      validateForms('#consultation form');
+      validateForms('#consultation-form');
+      validateForms('#order form');
   });
